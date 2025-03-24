@@ -1,1 +1,139 @@
 
+last week
+
+Add files via upload
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showSocialDashboard() {
+      const html = `
+        <h2>Social Dashboard</h2>
+        <button class="main-btn" onclick="openLink('https://www.facebook.com/login/')">Facebook</button>
+        <button class="main-btn" onclick="openLink('https://www.instagram.com/accounts/login/')">Instagram</button>
+        <button class="main-btn" onclick="openLink('https://twitter.com/login/')">Twitter (X)</button>
+        <button class="main-btn" onclick="openLink('https://www.tiktok.com/login')">TikTok</button>
+        <button class="main-btn" onclick="openLink('https://www.pinterest.com/login/')">Pinterest</button>
+        <button class="main-btn" onclick="openLink('https://web.telegram.org/')">Telegram</button>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showAIOptions() {
+      const html = `
+        <h2>AI Assistant Options</h2>
+        <button class="main-btn" onclick="openLink('https://chat.openai.com/')">ChatGPT</button>
+        <button class="main-btn">Claude</button>
+        <button class="main-btn">Google Gemini</button>
+        <button class="main-btn">DeepSeek AI</button>
+        <button class="main-btn">Others</button>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showAboutMenu() {
+      const html = `
+        <h2>About Section</h2>
+        <button class="main-btn" onclick="showAboutCoreX()">About CoreX</button>
+        <button class="main-btn" onclick="showAboutDeveloper()">About the Developer</button>
+        <button class="main-btn" onclick="showContacts()">Contacts</button>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showAboutCoreX() {
+      const html = `
+        <h2>About CoreX</h2>
+        <p><strong>Welcome to CoreX – Your Ultimate Digital Hub!</strong></p>
+        <p>CoreX is a <strong>powerful, multifunctional platform</strong> designed to streamline your workflow and consolidate all essential tools in one place.</p>
+        <h3>What CoreX Offers:</h3>
+        <ul>
+          <li>Task & Project Management</li>
+          <li>Global & Local Search</li>
+          <li>AI Assistance</li>
+          <li>Time Management</li>
+          <li>Team Collaboration</li>
+          <li>Favorites & Quick Access</li>
+          <li>File & Tool Management</li>
+          <li>Math Solver & Calculators</li>
+          <li>Learning Resources</li>
+          <li>Social Dashboard</li>
+          <li>Security & Privacy</li>
+          <li>Archives & Trash</li>
+          <li>Meetings & Calls</li>
+        </ul>
+        <p><strong>CoreX simplifies your digital life.</strong> Get started and experience the future of productivity!</p>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showAboutDeveloper() {
+      const html = `
+        <h2>About the Developer</h2>
+        <p>CoreX is developed by <strong>Shavkatjon Yuldashev</strong>, a dedicated innovator focused on creating intuitive and efficient digital solutions.</p>
+        <h3>Developer’s Vision:</h3>
+        <ul>
+          <li>Build an all-in-one digital hub.</li>
+          <li>Provide AI-powered assistance.</li>
+          <li>Create a secure, user-friendly workspace.</li>
+          <li>Continuously innovate with the latest technology.</li>
+        </ul>
+        <p>"I created CoreX to simplify digital workflows and empower productivity. This is just the beginning!"</p>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showContacts() {
+      const html = `
+        <h2>Contacts</h2>
+        <p><strong>Stay Connected</strong></p>
+        <p>📧 Email: shavkatjon.yuldashev.0411@gmail.com</p>
+        <p>📱 Instagram: <a href="https://www.instagram.com/shavkatjon_l/" target="_blank">@shavkatjon_l</a></p>
+        <p>🌐 Website: <em>Your Website (if available)</em></p>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showNetworking() {
+      const html = `
+        <h2>Networkings</h2>
+        <button class="main-btn" onclick="openLink('https://www.zoom.com/')">Zoom</button>
+        <button class="main-btn" onclick="openLink('https://web.whatsapp.com/')">WhatsApp</button>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showNotifications() {
+      const html = `
+        <h2>Notifications</h2>
+        <ul>
+          <li>Personal Chat</li>
+          <li>Group Chat</li>
+          <li>Supergroups</li>
+          <li>Bots</li>
+          <li>Comments</li>
+        </ul>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function showSettings() {
+      const html = `
+        <h2>Settings</h2>
+        <ul>
+          <li>General Settings</li>
+          <li>Theme Layout</li>
+          <li>Language</li>
+          <li>Reading Mode</li>
+        </ul>
+      `;
+      document.getElementById("main-content").innerHTML = html;
+    }
+    function archiveFunction() {
+      document.getElementById("main-content").innerHTML =
+        "<h2>Archive</h2><p>Archive functionality activated. Here you can view and manage archived items.</p>";
+    }
+    function lockFunction() {
+      document.getElementById("main-content").innerHTML =
+        "<h2>Locked Files</h2><p>Accessing locked files. Authentication required.</p>";
+    }
+    function openLink(url) {
+      window.open(url, "_blank");
+    }
+    // Theme Toggle Functionality
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
