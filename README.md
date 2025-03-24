@@ -224,11 +224,11 @@
     <div class="sidebar">
       <div class="logo">CoreX</div>
       <h2>CoreX Platform</h2>
-      <!-- Recents -->
-      <div class="nav-item" onclick="recentsFunction()">
-        <span class="material-icons">history</span>
-        <span>Recents</span>
-      </div>
+    <!-- Assignment -->
+<div class="nav-item" onclick="assignmentFunction()">
+  <span class="material-icons">history</span>
+  <span>Assignment</span>
+</div>
       <!-- Home -->
       <div class="nav-item" onclick="showHome()">
         <span class="material-icons">home</span>
