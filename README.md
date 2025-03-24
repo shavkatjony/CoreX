@@ -355,9 +355,11 @@
     function showTools() {
       const html = `
         <h2>Tools</h2>
-        <button class="main-btn" onclick="openLink('https://example.com/youtube-downloader')">YouTube Downloader</button>
-        <button class="main-btn" onclick="openLink('https://example.com/free-pdf-converter')">PDF Converter</button>
-        <button class="main-btn" onclick="openLink('https://example.com/mp4-to-mp3')">MP4 to MP3</button>
+<!-- Update links for YouTube, PDF, MP4 to MP3 -->
+<li><a href="https://en1.savefrom.net/1-youtube-video-downloader-7ON/" class="menu-item">YouTube Downloader</a></li>
+<li><a href="https://www.ilovepdf.com/" class="menu-item">PDF Converter</a></li>
+<li><a href="https://www.freeconvert.com/mp4-to-mp3" class="menu-item">MP4 to MP3</a></li>
+
       `;
       document.getElementById("main-content").innerHTML = html;
     }
